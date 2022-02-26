@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textPlanCidSpinner"
+        android:layout_width="wrap_content"
+        android:textSize="0dp"
+        android:layout_height="wrap_content"
+        android:text="cid" />
+
+    <TextView
+        android:textSize="22dp"
+        android:fontFamily="@font/fonts1"
+        android:id="@+id/textPlanCropSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="crop" />
+
+
+
+</LinearLayout>

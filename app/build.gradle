@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "th.in.nattawut.plancrop"
+        minSdkVersion 21
+        ///minSdkVersion 15 ก่อนจะติดตั้งfloatingbuttom24/5/62
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion = '28.0.3'
+    //sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/fonts'] } }
+    //useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'androidx.fragment:fragment:1.5.0-alpha02'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    //implementation 'com.squareup.picasso:picasso:2.71828'
+   // implementation 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+   // implementation 'com.loopj.android:android-async-http:1.4.9'
+
+
+    //text
+    implementation 'com.tomer:fadingtextview:2.5'
+
+    implementation 'com.github.imtuann:FloatingActionButtonExpandable:1.1.2'//ลองรับsdkversion 21 ขึ้นไป
+
+    implementation 'com.squareup.picasso:picasso:2.71828'//selectImages
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.github.ganfra:material-spinner:2.0.0'
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_tabplan" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            android:text="กรุณาวางแผนเพาะปลูกพืชปลอดสาร"
+            android:textColor="@color/colorba"
+            android:textSize="18dp"
+            android:textStyle="italic|bold" />
+
+        <com.tuann.floatingactionbuttonexpandable.FloatingActionButtonExpandable
+            android:id="@+id/floatingActionButtonPlan"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fab_padding_text_icon="10dp"
+            app:fab_bg_color="#00acc1"
+            app:fab_content="วางแผน"
+            app:fab_text_size="18dp"
+            app:fab_icon="@drawable/ic_control_point_black_24dp">
+
+        </com.tuann.floatingactionbuttonexpandable.FloatingActionButtonExpandable>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

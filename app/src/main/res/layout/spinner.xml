@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_home" />
+
+        <TextView
+            style="@style/fonts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="จังหวัด :" />
+
+
+        <Spinner
+            android:id="@+id/spProvince"
+            style="@style/fonts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"></Spinner>
+
+        <!--<com.jaredrummler.materialspinner.MaterialSpinner-->
+            <!--android:id="@+id/spProvince"-->
+            <!--app:ms_arrowColor="#0000FF"-->
+            <!--app:ms_arrowSize="16dp"-->
+            <!--app:ms_arrow_tint="@color/yello"-->
+            <!--app:ms_background_color="@color/colorWhite"-->
+            <!--app:ms_floatingLabelColor="#00FF00"-->
+            <!--app:ms_floatingLabelText="floating label"-->
+            <!--app:ms_hint="hint"-->
+            <!--app:ms_multiline="true"-->
+            <!--app:ms_text_color="@color/colorAccent"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    </LinearLayout>
+
+    <!--<com.jaredrummler.materialspinner.MaterialSpinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:ms_arrow_tint="@color/yello"-->
+    <!--app:ms_background_color="@color/colorWhite"-->
+    <!--app:ms_text_color="@color/colorAccent" />-->
+
+    <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+    <!--android:entries="@array/gender"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:ms_hint=""></fr.ganfra.materialspinner.MaterialSpinner>-->
+
+
+    <!--<Spinner-->
+    <!--style="@style/fonts"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="1dp"-->
+    <!--android:entries="@array/gender"></Spinner>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_home" />
+
+        <TextView
+            style="@style/fonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="อำเภอ :" />
+
+        <Spinner
+            android:id="@+id/spAmphur"
+            style="@style/fonts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"></Spinner>
+
+        <!--<com.jaredrummler.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/spAmphur"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/spAmphur"-->
+        <!--app:ms_hint=""-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></fr.ganfra.materialspinner.MaterialSpinner>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_home" />
+
+        <TextView
+            style="@style/fonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="ตำบล/แขวง :" />
+
+        <Spinner
+            android:id="@+id/spSubDistrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"></Spinner>
+        <!--<com.jaredrummler.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/spSubDistrice"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/spSubDistrice"-->
+        <!--app:ms_hint=""-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></fr.ganfra.materialspinner.MaterialSpinner>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_action_home" />
+
+        <TextView
+            style="@style/fonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="หมู่บ้าน:" />
+
+        <Spinner
+            android:id="@+id/spVillag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"></Spinner>
+
+        <!--<com.jaredrummler.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/spVillag"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+        <!--android:id="@+id/spVillag"-->
+        <!--app:ms_hint=""-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></fr.ganfra.materialspinner.MaterialSpinner>-->
+    </LinearLayout>
+
+</LinearLayout>

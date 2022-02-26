@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnEditFarmer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/midtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="ข้อมูลส่วนตัว"
+                android:textSize="0dp"
+                android:textStyle="bold" />
+
+            <!--Name-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ชื่อผู้ใช้งาน :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+
+            <EditText
+                android:id="@+id/edtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--Fristname-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="รหัสผ่าน :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--<EditText-->
+                <!--android:id="@+id/edtpassword"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="text"-->
+                <!--android:textSize="30dp"-->
+                <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--Surname-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ชื่อ-นามสกุล :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--Address-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="เลขประจำตัวประชาชน :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <EditText
+                android:id="@+id/edtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+
+                android:inputType="number"
+                android:maxLength="13"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--ที่อยู่-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ที่อยู่ :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <EditText
+                android:id="@+id/edtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--จังหวัด-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="จังหวัด :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <Spinner
+                android:id="@+id/spProvinceFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--อำเภอ-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="อำเภอ :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <Spinner
+                android:id="@+id/spAmphurFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--ตำบล-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ตำบล/แขวง :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <Spinner
+                android:id="@+id/spDistriceFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--หมูบ้าน-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="หมูบ้าน :"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <Spinner
+                android:id="@+id/spVillagFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--เบอร์โทร-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="เบอร์โทร: "
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <EditText
+                android:id="@+id/edtphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--อีเมล์-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="อีเมล์: "
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <EditText
+                android:id="@+id/edtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:textSize="30dp"
+                app:fontFamily="@font/fonts1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorlightGreen"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:text="ขนาดพื้นที่เพาะปลูกได้ทั้งหมด"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:gravity="center"
+                android:orientation="horizontal">
+
+                <GridLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/red_button"
+                    android:backgroundTint="@color/colorlightGreen"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ไร่"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/fonts1" />
+
+                        <EditText
+                            android:id="@+id/add1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:inputType="number"
+                            android:text="0" />
+                    </LinearLayout>
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:background="@drawable/red_button"
+                    android:backgroundTint="@color/colorlightGreen"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="งาน"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/fonts1" />
+
+                        <EditText
+                            android:id="@+id/add2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="number"
+                            android:text="0" />
+                    </LinearLayout>
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/red_button"
+                    android:backgroundTint="@color/colorlightGreen"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="วา"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/fonts1" />
+
+                        <EditText
+                            android:id="@+id/add3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:inputType="number"
+                            android:text="0" />
+                    </LinearLayout>
+                </GridLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--Button Add-->
+    <Button
+        android:id="@+id/btnEditFarmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabedit"
+        android:text="แก้ไขข้อมูล"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/fonts1" />
+
+
+</RelativeLayout>

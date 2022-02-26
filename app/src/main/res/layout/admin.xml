@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--&lt;!&ndash;Wallpaper&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:background="@drawable/drawer_header"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="#82ffffff"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="20dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;Green Layout&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/icon"-->
+    <!--android:layout_height="@dimen/admin"-->
+    <!--android:layout_margin="@dimen/margin">-->
+
+    <!--&lt;!&ndash;Station1&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/ic_action_planviewuser" />-->
+
+    <!--&lt;!&ndash;Title&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/imageViewFarmer"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#82000000"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="ข้อมูลเกษตรกร"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;Green Layout&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/icon"-->
+    <!--android:layout_height="@dimen/admin"-->
+    <!--android:layout_margin="@dimen/margin">-->
+
+    <!--&lt;!&ndash;Station1&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/ic_action_planviewuser" />-->
+
+    <!--&lt;!&ndash;Title&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/imageViewRegister"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#82000000"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="ข้อมูล  สมาชิก"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;Green Layout&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/icon"-->
+    <!--android:layout_height="@dimen/admin"-->
+    <!--android:layout_margin="@dimen/margin">-->
+
+    <!--&lt;!&ndash;Station1&ndash;&gt;-->
+    <!--<ImageView-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/harvest" />-->
+
+    <!--&lt;!&ndash;Title&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/imageViewCropTypr"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#82000000"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="ข้อมูล ประเภทพืช"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/icon"-->
+    <!--android:layout_height="@dimen/admin"-->
+    <!--android:layout_margin="@dimen/margin">-->
+
+    <!--&lt;!&ndash;Station1&ndash;&gt;-->
+    <!--<ImageView-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/harvest" />-->
+
+    <!--&lt;!&ndash;Title&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/imageViewCrop"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#82000000"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="ข้อมูล         พืชเพาะปลูก"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;Green Layout&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/icon"-->
+    <!--android:layout_height="@dimen/admin"-->
+    <!--android:layout_margin="@dimen/margin">-->
+
+    <!--&lt;!&ndash;Station1&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/shovel" />-->
+
+    <!--&lt;!&ndash;Title&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#82000000"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="ข้อมูล        การเพาะปลูก"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageViewFarmer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/listViewOrderChartResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageViewRegister"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/listViewOrderResultBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listViewOrderResultSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"></ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

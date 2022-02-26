@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="6dp"-->
+<!--            android:orientation="vertical">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:stretchColumns="*"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:orientation="horizontal"
+                            android:padding="1dp">
+
+
+                            <TextView
+                                style="@style/fonts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="จังหวัด :"
+                                android:textSize="18dp" />
+
+
+                            <Spinner
+                                android:id="@+id/spProvince"
+                                style="@style/fonts"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="1dp">
+
+
+                            <TextView
+                                style="@style/fonts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="อำเภอ :"
+                                android:textSize="18dp" />
+
+                            <Spinner
+                                android:id="@+id/spAmphur"
+                                style="@style/fonts"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:orientation="horizontal"
+                            android:padding="1dp">
+
+                            <TextView
+                                style="@style/fonts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ตำบล/แขวง :"
+                                android:textSize="18dp" />
+
+                            <Spinner
+                                android:id="@+id/spSubDistrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"></Spinner>
+                        </LinearLayout>
+
+                    </TableRow>
+                </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="จากวันที่"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/sdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:text="xx/xx/xxxx"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <ImageView
+                    android:id="@+id/imageViewDatesdate"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_action_datamember"
+                    app:fontFamily="@font/fonts1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="ถึงวันที่"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/edate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:text="xx/xx/xxxx"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <ImageView
+                    android:id="@+id/imageViewDateedate"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_action_datamember"
+                    app:fontFamily="@font/fonts1" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/textMidPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="เกษตรกร :"
+                    android:textSize="18dp" />
+
+
+                <Spinner
+                    android:id="@+id/midSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="ประเภทพืช :"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/croptypespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="ชื่อพืช :"
+                    android:textSize="18dp" />
+
+
+                <Spinner
+                    android:id="@+id/crop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"></Spinner>
+            </LinearLayout>
+<!--        </LinearLayout>-->
+
+
+
+        <Button
+            android:id="@+id/seletePlantResult"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/fonts1"
+            android:text="แสดงรายการ"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style7"
+            android:gravity="center"
+            android:text="ที่ตั้งแปลงเพาะปลูก"
+            android:textColor="@color/colorPri"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mapGoogle"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="238dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/p1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/style7"
+                        android:gravity="center"
+                        android:text="ประมาณการผลผลิตพืช"
+                        android:textColor="@color/colorPri"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/style7"
+                        android:gravity="center"
+                        android:text="ที่ตั้งแปลงเพาะปลูกพืช"
+                        android:textColor="@color/colorPri"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+
+<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--            android:id="@+id/swiRefreshLayoutPlantResult"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp">
+                    <!---->
+                    <ListView
+                        android:id="@+id/listViewPlantResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></ListView>
+                    <!---->
+                    <ListView
+                        android:id="@+id/listViewPlantResultSite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></ListView>
+                </TableRow>
+            </TableLayout>
+
+
+
+
+<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

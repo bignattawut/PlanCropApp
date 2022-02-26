@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/menu_user"
+        android:icon="@drawable/ic_action_home"
+        android:title="หน้าหลัก" />
+
+
+    <item android:title="การวางแผนการเพาะปลูก">
+        <menu>
+            <item
+                android:id="@+id/munu_orderresultsum"
+                android:icon="@drawable/chart"
+                android:title="สถิตความต้องการพืชปลอดสาร" />
+            <item
+                android:id="@+id/munu_produce"
+                android:icon="@drawable/ic_action_report"
+                android:title="สรุปการวางแผนเพาะปลูก" />
+            <item
+                android:id="@+id/menu_plan"
+                android:icon="@drawable/ic_action_tabplan"
+                android:title="วางแผนเพาะปลูก" />
+
+        </menu>
+    </item>
+    <item android:title="การเพาะปลูก">
+        <menu>
+            <item
+                android:id="@+id/munu_Plant"
+                android:icon="@drawable/ic_action_plant1"
+                android:title="เพาะปลูก" />
+            <item
+                android:id="@+id/munu_PlantRepor"
+                android:icon="@drawable/ic_action_report"
+                android:iconTint="@color/yello"
+                android:title="พืชที่ปลูก ณ ปัจจุบัน" />
+            <item
+                android:id="@+id/munu_PlantPicture"
+                android:icon="@drawable/ic_action_drawerpicture"
+                android:title="บันทึกการเพาะปลูก" />
+
+        </menu>
+    </item>
+
+    <item android:title="รายงาน">
+        <menu>
+            <item
+                android:id="@+id/menu_chart"
+                android:icon="@drawable/ic_harvest"
+                android:title="ผลผลิต" />
+            <item
+                android:id="@+id/munu_PlantReportall"
+                android:icon="@drawable/tabplant"
+                android:iconTint="@color/yello"
+                android:title="พืชเพาะปลูก" />
+            <item
+                android:id="@+id/menu_want"
+                android:icon="@drawable/ic_action_tabplan"
+                android:title="แจ้งความต้องการ" />
+
+
+            <!--<item-->
+                <!--android:id="@+id/menu_result"-->
+                <!--android:icon="@drawable/ic_harvest"-->
+                <!--android:title="ผลผลิตที่ต้องแปลงเพาะปลูก" />-->
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_menu">
+
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/ic_action_select"
+            android:title="เกี่ยวกับเรา" />
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@drawable/ic_action_exit"
+            android:title="ออกจากระบบ" />
+    </group>
+
+    <!--<group android:id="@+id/group_admin">-->
+        <!--<item-->
+            <!--android:id="@+id/menu_admin"-->
+            <!--android:icon="@drawable/ic_action_userregister"-->
+            <!--android:title="ผู้ดูแลระบบ" />-->
+        <!--<item-->
+            <!--android:id="@+id/menu_member"-->
+            <!--android:icon="@drawable/ic_action_userregister"-->
+            <!--android:title="สมาชิก" />-->
+    <!--</group>-->
+
+</menu>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Plan Crop</string>
+
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+
+    <string name="station1">พืชเพาะปลูก</string>
+    <string name="station2">ผลผลิต</string>
+    <string name="station3">แจ้งความต้องการ</string>
+    <string name="station4">สถิตการเพาะปลูก</string>
+    <string name="croptype">ข้อมูลประเภทพืช</string>
+    <string name="crop">พืชเพาะปลูก</string>
+    <string name="site">แปลงเพาะปลูก</string>
+    <string name="plan">กรุณาวางแผนเพาะปลูก</string>
+    <string name="admin">ผู้ดูแลระบบ</string>
+    <string name="member">สมาชิก</string>
+    <string name="Agriculture">ข้อมูลเกษตรกร</string>
+    <string name="register">ข้อมูล สมาชิก</string>
+    <string name="app_name1">Bottom Navigation</string>
+    <string name="title_Plan">วางแผน</string>
+    <string name="title_Plant">เพาะปลูก</string>
+    <string name="title_PlanPicture">กิจกรรม</string>
+
+
+    <string name="ales">
+        <item name="android:fontFamily">@font/fonts1</item>
+        <item name="android:text">กรุณากรอกข้อมูล</item>
+        <item name="android:textSize">22dp</item>
+    </string>
+
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D5D5D5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/bg_item"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="พืชเพาะปลูก :"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/textCid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="0dp" />
+
+                <TextView
+                    android:id="@+id/textCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="พืช"
+                    app:fontFamily="@font/fonts1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ประเภทพืช :"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/textCropTID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="0dp" />
+
+                <TextView
+                    android:id="@+id/textCropTypeTID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ประเภทพืช"
+                    app:fontFamily="@font/fonts1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จำนวนวันที่เก็บเกี่ยวได้ (วัน) :"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/textBeginHarvest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="จำนวนวันที่เก็บเกี่ยวได้"
+                    app:fontFamily="@font/fonts1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ระยะเวลาที่เก็บเกี่ยวได้ (วัน) :"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/fonts1" />
+
+
+                <TextView
+                    android:id="@+id/textHarvestPeriod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ระยะเวลา"
+                    app:fontFamily="@font/fonts1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ผลผลิตต่อไร (ก.ก) :"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/textYield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ผลผลิต"
+                    app:fontFamily="@font/fonts1" />
+
+            </LinearLayout>
+
+            <!--&lt;!&ndash;Content&ndash;&gt;-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="8dp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="พืช :"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textCid"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="0dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textCrop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="45dp"-->
+            <!--android:text="พืช"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="115dp"-->
+            <!--android:text="ประเภทพืช :"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textCropTID"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="0dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textCropTypeTID"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:text="ประเภทพืช"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--</RelativeLayout>-->
+            <!---->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="วันเก็บเกี่ยว :"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textBeginHarvest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="98dp"-->
+            <!--android:text="วันเก็บเกี่ยว"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+            <!---->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="123dp"-->
+            <!--android:text="ระยะเวลา :"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/textHarvestPeriod"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:text="ประเภทพืช"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+            <!---->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="ผลผลิต :"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textYield"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="75dp"-->
+            <!--android:text="ผลผลิต"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="155dp"-->
+            <!--android:text="ต่อ/ไร่"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

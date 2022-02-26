@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_action_back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Product Detail-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <!--Title-->
+            <!--<TextView-->
+            <!--android:textColor="#009688"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ผลิตภัณฑ์"-->
+            <!--android:textSize="@dimen/h2"-->
+            <!--android:textStyle="bold" />-->
+
+
+            <!--Image-->
+            <ImageView
+                android:id="@+id/imvImage"
+                android:layout_width="153dp"
+                android:layout_height="138dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/farmer"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text="ชื่อร้าน/ชื่อสวน :"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <TextView
+                android:id="@+id/txtNameShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--Line ทำเส้น-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-1dp"
+                android:background="#CEC8C8" />
+
+            <!--ชื่อ-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="ชื่อ-นามสกุล :"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:textColor="#000000"
+                    android:text="คุณ"
+                    android:textSize="26dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/txtFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000"
+                    android:textSize="26dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <TextView
+                    android:id="@+id/txtLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="26dp"
+                    app:fontFamily="@font/fonts1" />
+
+
+            </LinearLayout>
+
+            <!--Line ทำเส้น-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-1dp"
+                android:background="#CEC8C8" />
+
+
+            <!--ที่ตั้ง-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="ที่ตั้ง :"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <TextView
+                android:layout_marginBottom="-10dp"
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--Line ทำเส้น-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-1dp"
+                android:background="#CEC8C8" />
+
+
+            <!--เบอร์โทร-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="เบอร์โทรศัพท์ :"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                app:fontFamily="@font/fonts1" />
+
+            <!--Line ทำเส้น-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-1dp"
+                android:background="#CEC8C8" />
+
+
+
+
+            <!--&lt;!&ndash;User&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="18dp"-->
+            <!--android:text="ผู้ใช้งาน :"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="24dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="-7dp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="26dp"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--&lt;!&ndash;User&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="18dp"-->
+            <!--android:text="รหัสผ่าน :"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="24dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtPass"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="-7dp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="26dp"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--ประเภท-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="ประเภทผู้ใช้งาน :"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/fonts1" />
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                android:textColor="#000000"
+                android:textSize="26dp"
+                app:fontFamily="@font/fonts1" />
+
+
+
+            <!--Line ทำเส้น-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+
+                android:background="#CEC8C8" />
+
+            <!--&lt;!&ndash;ช่องทางการติดต่อ&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="18dp"-->
+            <!--android:text="ช่องทางการติดต่อ :"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="24dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtaddcontact"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="-10dp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="26dp"-->
+            <!--app:fontFamily="@font/fonts1" />-->
+
+            <!--&lt;!&ndash;Line ทำเส้น&ndash;&gt;-->
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="#CEC8C8" />-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

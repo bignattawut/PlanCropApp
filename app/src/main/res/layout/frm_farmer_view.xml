@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D5D5D5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/bg_item"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/farmer" />
+
+            <TextView
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="ที่อยู่ :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/textUsername"-->
+                <!--android:textColor="#009688"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="25dp"-->
+                <!--android:text="Name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@font/fonts1"/>-->
+
+            <!--&lt;!&ndash;จังหวัด&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/textPid"-->
+                <!--android:textColor="#009688"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="25dp"-->
+                <!--android:text="จ :"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@font/fonts1"/>-->
+            <!--&lt;!&ndash;อำเภอ&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/textDid"-->
+                <!--android:textColor="#009688"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="25dp"-->
+                <!--android:text="อ"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@font/fonts1"/>-->
+            <!--&lt;!&ndash;ตำบล&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:id="@+id/textSid"-->
+                <!--android:textColor="#009688"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="25dp"-->
+                <!--android:text="ต"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@font/fonts1"/>-->
+            <!--หมู่บ้าน-->
+            <TextView
+                android:id="@+id/textvid"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:text="หนองสะมอน"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="ชื่อ :"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+            <TextView
+                android:id="@+id/textNamef"
+                android:layout_marginLeft="55dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:text="ชื่อ-นามสกุล"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+            <TextView
+                android:id="@+id/textPhonef"
+                android:textColor="#8BC34A"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:text="Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

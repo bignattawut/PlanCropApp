@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <!-- <android.support.v7.widget.Toolbar
+       android:id="@+id/toolbarmain"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@drawable/common_google_signin_btn_text_light_normal_background"
+       android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+       app:titleTextColor="@color/colorblack" />-->
+
+
+
+
+  <!--<RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="0dp"
+       android:layout_marginLeft="0dp"
+       android:layout_marginTop="0dp">
+
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="centerCrop"
+           android:src="@drawable/drawer_header" />
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="90dp"
+           android:background="@android:drawable/editbox_dropdown_light_frame"
+           android:src="@drawable/plan" />
+
+       <ImageView
+           android:id="@+id/ImageView"
+           android:layout_width="wrap_content"
+           android:layout_height="52dp"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginStart="301dp"
+           android:layout_marginLeft="301dp"
+           android:layout_marginTop="14dp"
+           android:layout_marginEnd="11dp"
+           android:layout_marginRight="11dp"
+           android:src="@drawable/ic_action_user" />
+
+   </RelativeLayout>-->
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawer_header" />
+
+  </RelativeLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:background="#82ffffff"
+      android:orientation="vertical"
+      android:padding="1dp"
+      android:layout_alignParentLeft="true">
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/plan" />
+
+
+            <ImageView
+                android:id="@+id/ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="301dp"
+                android:layout_marginLeft="301dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/ic_action_user" />
+
+        </RelativeLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+      <!--Station1-->
+      <ImageView
+          android:layout_width="230dp"
+          android:layout_height="80dp"
+          android:src="@drawable/plantmain" />
+
+
+      <!--<LinearLayout-->
+      <!--android:id="@+id/ImageView"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="55dp"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:layout_marginRight="5dp"-->
+      <!--android:background="@drawable/style4"-->
+      <!--android:orientation="horizontal"-->
+      <!--android:padding="5dp">-->
+
+      <ImageButton
+          android:background="@drawable/buttonedit"
+          android:src="@drawable/loginplancrop"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      <!--</LinearLayout>-->
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:background="#82ffffff"
+      android:orientation="vertical"
+      android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/textLogin"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fontFamily="casual"
+          android:text="Welecom Plan Crop"
+          android:textColor="@color/colorPrimary"
+          android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <!--Green Layout-->
+      <RelativeLayout
+          android:layout_width="@dimen/icon"
+          android:layout_height="@dimen/icon"
+          android:layout_margin="@dimen/margin">
+
+        <!--Station1-->
+        <ImageView
+            android:id="@+id/imageViewPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shovel" />
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/textViewStation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#82000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/station1"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+      </RelativeLayout>
+
+
+      <!--Green Layout-->
+      <RelativeLayout
+          android:layout_width="@dimen/icon"
+          android:layout_height="@dimen/icon"
+          android:layout_margin="@dimen/margin">
+
+        <!--Station2-->
+        <ImageView
+            android:id="@+id/imageViewPlantPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/harvest" />
+
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/textViewStation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#82000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/station2"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+      </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!--Blue Layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <!--Green Layout-->
+      <RelativeLayout
+          android:layout_width="@dimen/icon"
+          android:layout_height="@dimen/icon"
+          android:layout_margin="@dimen/margin">
+
+        <!--Station3-->
+        <ImageView
+            android:id="@+id/imageViewPlant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/notepad" />
+
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/textViewStation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#82000000"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/station3"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+      </RelativeLayout>
+
+      <!--Green Layout-->
+      <RelativeLayout
+          android:layout_width="@dimen/icon"
+          android:layout_height="@dimen/icon"
+          android:layout_margin="@dimen/margin">
+
+        <!--Station4-->
+        <ImageView
+            android:id="@+id/imageViewListPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/chart" />
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/textViewStation4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#82000000"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/station4"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+      </RelativeLayout>
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <!--
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <Button
+                  android:id="@+id/btnPlanmain"
+                  android:text="วาางแผนเพาะปลูก"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+              <Button
+                  android:id="@+id/btnPlanView"
+                  android:text="รายการวางแผนพืชปลอดสาร"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+              <Button
+                  android:id="@+id/btnPlant"
+                  android:text="ข้อมูลการเพาะปลูก"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+              <Button
+                  android:id="@+id/btnCrop"
+                  android:text="พืชเพาะปลูก"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+
+      </LinearLayout>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="47dp"
+          android:layout_marginTop="138dp"
+          android:text="กรุณาวางแผนเพาะปลูกพืชปลอดสาร"
+          android:textColor="@color/colorAccent"
+          android:textSize="20dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="47dp" />
+
+      <Button
+          android:id="@+id/btnPlanmain"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="221dp"
+          android:background="@drawable/red_button"
+          android:text="วาางแผนเพาะปลูก"
+          android:textColor="@color/colorGreen"
+          android:textSize="20dp" />-->
+
+
+</RelativeLayout>

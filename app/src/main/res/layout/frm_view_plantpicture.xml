@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="พีชเพาะปลูก : "
+                android:textSize="24dp"
+                app:fontFamily="@font/fonts1" />
+
+            <Spinner
+                android:id="@+id/PlantNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"></Spinner>
+
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/selete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:fontFamily="@font/fonts1"
+        android:text="แสดงรายการ"
+        android:textColor="@color/colorWhite"
+        android:textSize="24dp" />
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiRefreshLayouPlantPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/listViewPlantPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerViewFriend"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom">
+
+        <com.tuann.floatingactionbuttonexpandable.FloatingActionButtonExpandable
+            android:id="@+id/floatingActionButtonViewPlantPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="65dp"
+            app:fab_bg_color="#FF0BB1D3"
+            app:fab_content="บันทึกกิจกรรม"
+            app:fab_icon="@drawable/ic_camera_black_24dp"
+            app:fab_padding_text_icon="10dp"
+            app:fab_text_size="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

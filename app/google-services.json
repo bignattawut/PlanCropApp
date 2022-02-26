@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1071600940648",
+    "firebase_url": "https://plancrop-a93a7.firebaseio.com",
+    "project_id": "plancrop-a93a7",
+    "storage_bucket": "plancrop-a93a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071600940648:android:9aa5b0dafbc9206f",
+        "android_client_info": {
+          "package_name": "th.in.nattawut.plancrop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071600940648-ps3qeoml3q3iq3sob3rl1t8bt1olo9r2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.in.nattawut.plancrop",
+            "certificate_hash": "36b158fa8010a71915ca78f9bca219eb0013a5c9"
+          }
+        },
+        {
+          "client_id": "1071600940648-5l5u2qcfbph2af3eqaitlg1s6dv2kita.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDePRhusEWM9TDSrYLNbn7bHc5BFGpaCsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071600940648-5l5u2qcfbph2af3eqaitlg1s6dv2kita.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

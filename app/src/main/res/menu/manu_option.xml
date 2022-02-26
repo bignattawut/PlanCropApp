@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_appnattawut1"
+        android:id="@+id/option"
+        android:title="เกี่ยวกับ Plan Crop"/>
+
+    <!--menu option title และ icon-->
+    <!--<item-->
+        <!--android:id="@+id/aa"-->
+        <!--android:icon="@drawable/ic_action_never"-->
+        <!--android:title=""-->
+        <!--app:showAsAction="always">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/stting"-->
+                <!--android:icon="@drawable/ic_action_setting"-->
+                <!--android:title="การตั้งค่า"-->
+                <!--app:showAsAction="ifRoom" />-->
+            <!--<item-->
+                <!--android:id="@+id/option"-->
+                <!--android:icon="@drawable/ic_action_about"-->
+                <!--android:title="เกี่ยวกับ Plan Crop"-->
+                <!--app:showAsAction="always" />-->
+
+            <!--<item-->
+                <!--android:id="@+id/exit"-->
+                <!--android:icon="@drawable/ic_action_exit"-->
+                <!--android:title="ออกจากระบบ"-->
+                <!--app:showAsAction="ifRoom" />-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_fontFamily_medium">sans-serif</string>
+    <string name="font_fontFamily_plan">fonts1</string>
+
+    <string-array name="big">
+        <item name="">16dp</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>a</item>
+        <item>Female</item>
+    </string-array>
+
+    <style name="fonts"
+        parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/fonts1</item>
+    </style>
+
+</resources>

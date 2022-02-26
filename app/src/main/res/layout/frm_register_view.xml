@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D5D5D5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/bg_item"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/iconregister" />
+
+
+            <TextView
+                android:id="@+id/textUsername"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="ชื่อ :"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_marginLeft="55dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:text="ชื่อ-นามสกุล"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+            <TextView
+                android:id="@+id/textPhone"
+                android:textColor="#8BC34A"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:text="Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/fonts1"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="รหัสผ่าน"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="id"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="ที่อยู่"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textPid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="จังหวัด"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textDid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="อำเภอ"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textSid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="ตำบล"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textVid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="หมู่บ้าน"
+            android:textSize="0dp" />
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="gmail"
+            android:textSize="0dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

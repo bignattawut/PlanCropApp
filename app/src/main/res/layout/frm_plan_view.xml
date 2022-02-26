@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <!-- <TableLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginStart="21dp"
+         android:layout_marginLeft="21dp"
+         android:layout_marginTop="11dp">
+
+         <TableRow>
+             <TextView
+                 android:id="@+id/texPlan"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:text="พืชปลอดสาร"
+                 android:textSize="0dp" />
+         </TableRow>
+
+         <TableRow>
+             <TextView
+                 android:id="@+id/textMid"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:text="เกษตรกร"
+                 android:textSize="0dp" />
+         </TableRow>
+         <TableRow>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="5dp"
+                 android:textStyle="bold"
+                 android:text="เกษตรกร :" />
+
+             <TextView
+                 android:id="@+id/textTypePlan"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="5dp"
+                 android:textColor="@color/colorGreen"
+                 android:text="เกษตรกร" />
+         </TableRow>
+
+         <TableRow>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:text="พืช :" />
+
+             <TextView
+                 android:id="@+id/textCid"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:textColor="@color/colorGreen"
+                 android:text="พืช" />
+         </TableRow>
+
+         <TableRow>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:textStyle="bold"
+                 android:text="วันที่้เพาะปลูก :" />
+
+             <TextView
+                 android:id="@+id/textArePlant"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:textColor="@color/colorGreen"
+                 android:text="พื้นที่" />
+         </TableRow>
+
+         <TableRow>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:textStyle="bold"
+                 android:text="พื้นที่เพาะปลูก :" />
+
+             <TextView
+                 android:id="@+id/textDataplant"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="5dp"
+                 android:textColor="@color/colorGreen"
+                 android:text="วันที่" />
+         </TableRow>
+
+     </TableLayout>-->
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/imageViewFarmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style6"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_deadline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:text="วันที่จะปลูก"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textArePlant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/fonts1"
+                    android:text="วันที่เพาะปลูก"
+                    android:textColor="@color/colorPri"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:text="เกษตรกร"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textTypePlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/fonts1"
+                    android:text="เกษตรกร"
+                    android:textColor="@color/colorPri"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_harvest" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:text="ปริมาณการผลผลิต"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textcrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/fonts1"
+                    android:text="พืชเพาะปลูก"
+                    android:textColor="@color/colorPri"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_leaf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:text="พืชที่จะปลูก"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textplanCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/fonts1"
+                    android:paddingRight="5dp"
+                    android:text="พื้นที่เพาะปลูก"
+                    android:textColor="@color/colorPri"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_selection" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:text="พื้นที่จะปลูก (ไร่-งาน-วา)"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDataplant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/fonts1"
+                    android:paddingRight="5dp"
+                    android:text="พื้นที่เพาะปลูก"
+                    android:textColor="@color/colorPri"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="0dp" />
+
+    <TextView
+        android:id="@+id/texPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ชื่อ-สกุล"
+        android:textSize="0dp" />
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="15dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:padding="1dp"-->
+    <!--android:src="@drawable/ic_deadline" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="วันที่เพาะปลูก"-->
+    <!--android:textColor="@color/colorblack"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textArePlant"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="วันที่เพาะปลูก"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:padding="1dp"-->
+    <!--android:src="@drawable/ic_user" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/texPlan"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ชื่อ-สกุล"-->
+    <!--android:textSize="0dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textMid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ชื่อ-สกุล"-->
+    <!--android:textSize="0dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="เกษตรกร"-->
+    <!--android:textColor="@color/colorblack"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textTypePlan"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="ชื่อ-สกุล"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="14dp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:padding="1dp"-->
+    <!--android:src="@drawable/ic_leaf" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="พืชเพาะปลูก"-->
+    <!--android:textColor="@color/colorblack"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textCid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:text="พืชเพาะปลูก"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:padding="1dp"-->
+    <!--android:src="@drawable/ic_selection" />-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="พื้นที่เพาะปลูก"-->
+    <!--android:textColor="@color/colorblack"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textDataplant"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="พืชที่เพาะปลูก"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="14dp" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

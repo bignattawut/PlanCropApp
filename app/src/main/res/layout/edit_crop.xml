@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/red_button"
+      android:backgroundTint="@color/colorAccent"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+      <TextView
+          android:fontFamily="@font/fonts1"
+          android:text="ชื่อพืช :"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:fontFamily="@font/fonts1"
+          android:textSize="26dp"
+          android:id="@+id/edtEditCropName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/style1"
+          android:inputType="text"
+          android:padding="1dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+      <TextView
+          android:fontFamily="@font/fonts1"
+          android:text="ประเภทพืช :"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <Spinner
+          android:id="@+id/EditcropTypeSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="1dp"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+      <TextView
+          android:fontFamily="@font/fonts1"
+          android:layout_marginLeft="10dp"
+          android:text="จำนวนวันที่เก็บเกี่ยว (วัน) :"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:fontFamily="@font/fonts1"
+          android:textSize="26dp"
+          android:id="@+id/edtEditBeginHarvest"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/style1"
+          android:inputType="number"
+          android:maxLength="4"
+          android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:text="ระยะเวลาที่เก็บเกี่ยว (วัน) : "
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:fontFamily="@font/fonts1"
+          android:textSize="26dp"
+          android:id="@+id/edtEditHarvestPeriod"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/style1"
+          android:inputType="number"
+          android:maxLength="4"
+          android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style1"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:text="ผลผลิตต่อไร่ (ก.ก) :"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:fontFamily="@font/fonts1"
+          android:textSize="26dp"
+          android:id="@+id/edtEditYield"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/style1"
+          android:inputType="number"
+          android:padding="10dp" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

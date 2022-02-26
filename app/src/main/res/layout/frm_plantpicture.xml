@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Toolbar-->
+    <!-- <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbarPlantPicture"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+         android:background="@color/colorPrimary"
+         android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+         app:titleTextColor="@color/colorWhite" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imagePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginBottom="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imagePhoto"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/photo" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/red_button"
+                android:backgroundTint="@color/colorlightGreen"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imvCamera"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/ic_action_camera" />-->
+
+
+                <ImageView
+                    android:id="@+id/imvGallery"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_action_gallery" />
+
+            </LinearLayout>
+
+            <!--<EditText-->
+                <!--android:id="@+id/PicNo1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/PicNo2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/filename1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="0dp"
+                android:text="FileName 1: " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="@font/fonts1"
+                    android:text="พืชที่เพาะปลูก"
+                    android:textSize="24dp" />
+
+                <Spinner
+                    android:id="@+id/spPlantNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fonts1"
+                    android:inputType="date"
+                    android:text="วันที่ลงรูป :"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/textViewDatePicture"
+                    android:layout_width="200dp"
+                    android:hint="วว/ดด/ปปปป"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageViewDatePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/dateplan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style1"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="รายละเอียดรูป :"-->
+                <!--android:textSize="20dp" />-->
+
+                <EditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/style1"
+                    android:hint="รายละเอียดของกิจกรรมเพาะปลูก"
+                    android:lines="3"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/fonts1" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/edtDescription"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/style1"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--android:lines="5"-->
+                <!--android:padding="1dp" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button"
+                    android:padding="10dp"
+                    android:text="บันทึก"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <!--<Button-->
+                <!--android:id="@+id/btnPlantPicture"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="@color/colorlightGreen"-->
+                <!--android:text="บันทึก"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="18dp"-->
+                <!--android:textStyle="bold" />-->
+
+            </LinearLayout>
+
+
+            <!-- <android.support.design.widget.TabLayout
+                  android:background="@drawable/style3"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <android.support.design.widget.TabItem
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:icon="@drawable/ic_action_camera"
+                      android:text="Camera" />
+
+
+                  <android.support.design.widget.TabItem
+                      android:id="@+id/imvGallery"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:icon="@drawable/ic_action_gallery"
+                      android:text="Gallery" />
+
+              </android.support.design.widget.TabLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
